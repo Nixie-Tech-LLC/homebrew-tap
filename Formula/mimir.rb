@@ -1,15 +1,15 @@
 class Mimir < Formula
   desc "mimir platform CLI — gcloud-style device-flow login, RBAC-gated projects"
   homepage "https://github.com/Nixie-Tech-LLC/mimir-cli"
-  version "0.1.4"
+  version "0.2.0"
   license "MIT"
   on_macos do
-    on_arm  do url "https://github.com/Nixie-Tech-LLC/mimir-cli/releases/download/v0.1.4/mimir_0.1.4_darwin_arm64.tar.gz"; sha256 "98e984b3722e20b68b18119d0ae39a97db5b601bacc794d8450cc963d1e7dd0b"; end
-    on_intel do url "https://github.com/Nixie-Tech-LLC/mimir-cli/releases/download/v0.1.4/mimir_0.1.4_darwin_amd64.tar.gz"; sha256 "eef9f620c6157045718abd48c150443c386813817baaf4271e42d23a0f54a013"; end
+    on_arm  do url "https://github.com/Nixie-Tech-LLC/mimir-cli/releases/download/v0.2.0/mimir_0.2.0_darwin_arm64.tar.gz"; sha256 "7fa2b8a9cd764f80e74f315b24887ba44ac11242ca2263a4a8bd7be8837be05f"; end
+    on_intel do url "https://github.com/Nixie-Tech-LLC/mimir-cli/releases/download/v0.2.0/mimir_0.2.0_darwin_amd64.tar.gz"; sha256 "ad5ecf53886ce10ae626da8c383f8d1b5b7bf5c6353c35e2b560ad4e6d3fc7a1"; end
   end
   on_linux do
-    on_arm  do url "https://github.com/Nixie-Tech-LLC/mimir-cli/releases/download/v0.1.4/mimir_0.1.4_linux_arm64.tar.gz"; sha256 "2ac507e90f982496fc1eb2f3c28ca0e7cdcfa1abe2ffcbe510772482bd82a76c"; end
-    on_intel do url "https://github.com/Nixie-Tech-LLC/mimir-cli/releases/download/v0.1.4/mimir_0.1.4_linux_amd64.tar.gz"; sha256 "472a52b0ae9caf9fc1ae33b1d6392993bbfec3b0ff0f0bcf51599e413cc09037"; end
+    on_arm  do url "https://github.com/Nixie-Tech-LLC/mimir-cli/releases/download/v0.2.0/mimir_0.2.0_linux_arm64.tar.gz"; sha256 "98c5d6b006d73e90bada921adca9fd3364d7300bc5aa95a011c6da247258e8f4"; end
+    on_intel do url "https://github.com/Nixie-Tech-LLC/mimir-cli/releases/download/v0.2.0/mimir_0.2.0_linux_amd64.tar.gz"; sha256 "3aae70214a07c055c02d02882be1b2a894916242e7acfab8a817d9327b908bd6"; end
   end
   def install; bin.install "mimir"; end
   test do; system "#{bin}/mimir", "version"; end
