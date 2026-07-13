@@ -1,25 +1,25 @@
 class Lait < Formula
   desc "A local-first, peer-to-peer, end-to-end-encrypted issue tracker built on iroh + Loro CRDTs"
   homepage "https://github.com/Nixie-Tech-LLC/lait"
-  version "0.4.5"
+  version "0.4.6"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/Nixie-Tech-LLC/lait/releases/download/v0.4.5/lait-aarch64-apple-darwin.tar.gz"
-      sha256 "8ba56bf0d8455a0f6835ac8deff8074a077ef919760d78079201e83b12460ed6"
+      url "https://github.com/Nixie-Tech-LLC/lait/releases/download/v0.4.6/lait-aarch64-apple-darwin.tar.gz"
+      sha256 "b6cbd5c1a768624e150ac37c172c51373603133d803b334d33a6d46cdfc9e9ed"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Nixie-Tech-LLC/lait/releases/download/v0.4.5/lait-x86_64-apple-darwin.tar.gz"
-      sha256 "36416633bf586afb9da037e55ab4e90da295d7b66b2bb4721b0af72513b19ff3"
+      url "https://github.com/Nixie-Tech-LLC/lait/releases/download/v0.4.6/lait-x86_64-apple-darwin.tar.gz"
+      sha256 "c578821c03f301a820fe8e575dc665fc71837dd50cd80ce0594c81b1976ab71b"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/Nixie-Tech-LLC/lait/releases/download/v0.4.5/lait-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "c34f334e52ba0176a4d22741da3113c8af3176524e8606b0f68209cb749cac74"
+      url "https://github.com/Nixie-Tech-LLC/lait/releases/download/v0.4.6/lait-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "5293574d90cd3622f4c45539203a1192345d5cd2e02bf9a174918ac44d4400e2"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Nixie-Tech-LLC/lait/releases/download/v0.4.5/lait-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "bf28e5bfe7b94a47904d7ca7e5540b6fe35ecb36681204d2075f9f7e848c91dc"
+      url "https://github.com/Nixie-Tech-LLC/lait/releases/download/v0.4.6/lait-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "f7357491b9ba83635b59d870458c3a1552416de61131455ea800dae213986f69"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
